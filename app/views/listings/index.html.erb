@@ -5,8 +5,8 @@
         <div class="thumbnail">
           <%= image_tag listing.image.url %>
           <div class="caption">
-            <%= listing.name %><br>
-            <%= number_to_currency(listing.price) %><br>
+            <h3><%= listing.name %></h3>
+            <p><%= number_to_currency(listing.price) %></p>
             <%= link_to 'Show', listing, class: "btn btn-link" %>
             <%= link_to 'Edit', edit_listing_path(listing), class: "btn btn-link" %>
             <%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %>
