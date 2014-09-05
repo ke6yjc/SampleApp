@@ -32,6 +32,12 @@ gem 'spring',        group: :development
 # Paperclip - https://github.com/thoughtbot/paperclip
 gem "paperclip", "~> 4.2"
 
+# Paperclip-dropbox - https://github.com/janko-m/paperclip-dropbox
+gem "paperclip-dropbox", ">= 1.1.7"
+
+# Figaro - https://github.com/laserlemon/figaro
+gem "figaro"
+
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
