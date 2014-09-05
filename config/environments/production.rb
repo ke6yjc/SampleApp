@@ -83,4 +83,7 @@ Rails.application.configure do
   # Paperclip Options
   Paperclip.options[:image_magick_path] = "/opt/ImageMagick/bin"
   Paperclip.options[:command_path] = "/opt/ImageMagick/bin"
+
+  # Required for Devise gem remember to change localhost:3000 to http://tgf-app01-2014.herokuapp.com/
+  config.action_mailer.default_url_options = { host: 'tgf-app01-2014.herokuapp.com', port: 80 }
 end

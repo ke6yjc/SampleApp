@@ -38,6 +38,9 @@ gem "paperclip-dropbox", ">= 1.1.7"
 # Figaro - https://github.com/laserlemon/figaro
 gem "figaro"
 
+# Devise 3.0 - https://github.com/plataformatec/devise
+gem 'devise'
+
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
